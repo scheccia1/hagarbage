@@ -1,5 +1,5 @@
-# hagarbage
-Card per la differenziata con notifica
+# hagarbage 1.1
+Card per la raccolta differenziata con notifica<br>
 Questo package è l'unione tra una card di Simonz82 ( https://github.com/Simonz82/ha_garbage ) e il package di Saverio Gravagnola ( http://domoticamente.it  )<br>
 
 Istruzioni: <br>
