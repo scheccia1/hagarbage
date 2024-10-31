@@ -182,11 +182,7 @@ sensor:
           {{ "raccolta_differenziata_" + states.sensor.giorno_della_settimana.state }}
 
 #RACCOLTA DIFFERENZIATA
-# Da inserire nella sezione sensor:
 # Prodotto da conferire in base al giorno
-# Giorni:
-# 0 = Lunedì, 1 = Martedì, 2 = Mercoledì, ecc...
-# Sostituire il prodotto da conferire in base al giorno della settimana
   - platform: template
     sensors:
        raccoltadifferenziata:
