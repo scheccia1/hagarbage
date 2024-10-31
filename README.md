@@ -8,7 +8,7 @@ a. hui-element <br>
 b. button-card <br>
 c. browser mod <br>
 1) create a new card in HA by pasting the contents of the file: garbage_card.txt <br>
-2) in packages folder copy file: differenziata.yaml <br>
-3) in www\ folder copy folder: rifiuti <br>
+2) in "packages" folder copy file: differenziata.yaml <br>
+3) in "www" folder copy folder: rifiuti <br>
 Edit setting in differenziata .yaml<br>
 
