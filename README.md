@@ -22,3 +22,8 @@ c. browser mod <br>
 3) create a new card in HA by pasting the contents of the file: card.txt <br>
 Edit setting in differenziata .yaml<br>
 
+![card](https://github.com/user-attachments/assets/c9bd0372-721d-4998-b5fa-534803e90cac)
+
+![notifica](https://github.com/user-attachments/assets/01f6e109-1018-4799-b08a-c6b538006398)
+
+![setting](https://github.com/user-attachments/assets/07f3e42b-bd36-4a93-8b4b-62851a3bbbce)
