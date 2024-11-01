@@ -10,6 +10,7 @@ c. browser-mod <br>
 1) nella cartella "packages" copia il file: differenziata.yaml <br>
 2) nella cartella "www" copia la cartella rifiuti: rifiuti <br>
 3) crea una nuova card con il codice di: card.txt <br>
+
 modifica differenziata.yaml impostando i tuoi dati<br>
 
 Instructions: <br>
@@ -20,6 +21,7 @@ c. browser mod <br>
 1) in "packages" folder copy file: differenziata.yaml <br>
 2) in "www" folder copy folder: rifiuti <br>
 3) create a new card in HA by pasting the contents of the file: card.txt <br>
+
 Edit setting in differenziata .yaml<br>
 
 ![card](https://github.com/user-attachments/assets/c9bd0372-721d-4998-b5fa-534803e90cac)
