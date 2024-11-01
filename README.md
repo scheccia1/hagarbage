@@ -6,7 +6,7 @@ Istruzioni: <br>
 da Hacs, installa: <br>
 a. hui-element <br>
 b. button-card <br>
-c. browser mod <br>
+c. browser-mod <br>
 1) nella cartella "packages" copia il file: differenziata.yaml <br>
 2) nella cartella "www" copia la cartella rifiuti: rifiuti <br>
 3) crea una nuova card con il codice di: card.txt <br>
