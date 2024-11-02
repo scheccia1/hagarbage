@@ -24,7 +24,7 @@ entities:
                   transform: translate(0%,20%)
                 state_image:
                   Nulla: /local/rifiuti/Nulla.png
-                  Indifferenziato: /local/rifiuti/Indifferenzionato.png
+                  Indifferenziato: /local/rifiuti/Indifferenziato.png
                   Plastica e metalli: /local/rifiuti/Plastica.png
                   Vetro: /local/rifiuti/Vetro.png
                   Carta e cartone: /local/rifiuti/Carta.png
