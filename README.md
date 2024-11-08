@@ -1,4 +1,4 @@
-# hagarbage 1.1
+# hagarbage 1.1 / 1.2
 Card per la raccolta differenziata con notifica per Home Assistant<br>
 Questo package è l'unione tra una card di Simonz82 ( https://github.com/Simonz82/ha_garbage ) e il package di Saverio Gravagnola ( http://domoticamente.it  )<br><br>
 <u><b>Usare la versione 2 per la raccolta bisettimanale (card2.txt e differenziata2.yaml -> non usare insieme con differenziata.yaml)</u></b><br><br>
