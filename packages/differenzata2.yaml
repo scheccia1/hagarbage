@@ -387,11 +387,11 @@ automation:
         data:
           title: 🚮 Ricordati di buttare l'immondizia
           message: >-
-            {% if (((now() - as_datetime(0)).days // 7) % 2 == 0) and (is_state('input_boolean.raccolta_differenziata_seconda_settimana', 'on'))  %}
-            {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state+"2") }}
+            {% if (((now() - as_datetime(0)).days // 7) % 2 == 0) and (is_state('input_boolean.raccolta_differenziata_seconda_settimana','on'))  %}
+                 {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state+"2") }}
             {% else %}
-             {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state) }}
-             {% endif %}
+               {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state) }}
+            {% endif %}
       - service: notify.alexa_media
         continue_on_error: true
         data:
@@ -400,19 +400,21 @@ automation:
           data:
             type: announce
             method: spoken
-          message: >-
-             {% if (((now() - as_datetime(0)).days // 7) % 2 == 0) and (is_state('input_boolean.raccolta_differenziata_seconda_settimana', 'on'))  %}
-             Ricordati di buttare l'immondizia. Oggi si butta {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state+"2")[2:] }}
-             {% else %}
-             Ricordati di buttare l'immondizia. Oggi si butta {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state)[2:] }}
-              {% endif %}
+          message: |-
+            Ricordati di buttare l'immondizia. Oggi si butta
+                    {% if (((now() - as_datetime(0)).days // 7) % 2 == 0) and is_state('input_boolean.raccolta_differenziata_seconda_settimana','on')  %}
+                       {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state+"2")[2:] }}
+                    {% else %}
+                       {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state)[2:] }}
+                    {% endif %} 
       - service: tts.google_translate_say
         continue_on_error: true
         data:
             entity_id: *google
-            message: >-
-              {% if (((now() - as_datetime(0)).days // 7) % 2 == 0) and (is_state('input_boolean.raccolta_differenziata_seconda_settimana', 'on'))  %}
-              Ricordati di buttare l'immondizia. Oggi si butta {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state+"2")[2:] }}  
-              {% else %}
-               Ricordati di buttare l'immondizia. Oggi si butta {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state")[2:] }}  
-              {% endif %}
+            message: |-
+             Ricordati di buttare l'immondizia. Oggi si butta
+                {% if (((now() - as_datetime(0)).days // 7) % 2 == 0) and is_state('input_boolean.raccolta_differenziata_seconda_settimana','on')  %}
+                   {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state+"2")[2:] }}
+                {% else %}
+                   {{ states("input_select.raccolta_differenziata_" + states.sensor.giorno_della_settimana.state)[2:] }}
+                {% endif %} 
